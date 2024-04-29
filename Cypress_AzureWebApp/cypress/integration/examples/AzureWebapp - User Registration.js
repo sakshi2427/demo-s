@@ -30,7 +30,7 @@ describe("My First Test Suite", function () {
     //cy.get(".dropbtn").should("contain.text", "Hello");
       });
  
-function addTwoNumbers(a,b){
+function addThreeNumbers(a,b){
 return a+b
 }
 
