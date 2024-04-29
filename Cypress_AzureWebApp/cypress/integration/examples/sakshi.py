@@ -44,7 +44,7 @@ print(addtwo('1', '2'))
 import math
 import random
 
-def addtwo(a, b):
+def addtwo11(a, b):
     # Validate inputs are numbers
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an int or float")
