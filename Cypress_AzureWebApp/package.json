@@ -1,0 +1,22 @@
+{
+  "name": "cypress_azurewebapp",
+  "version": "1.0.0",
+  "description": "This is Cypress Automation Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "CypressCloud": "npx cypress run --record --key 7a60f4cf-939d-4e68-9f6c-b828b02ca6f0 --headed --browser chrome --reporter mochawesome",
+    "HeadedinChrome": "npm test -- --headed --browser chrome"
+  },
+  "author": "Shubham",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.4",
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress": "^12.17.3"
+  },
+  "devDependencies": {
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-07T14:04:21.216Z",
+    "end": "2023-08-07T14:04:36.942Z",
+    "duration": 15726,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cc28e9ad-b30e-4e97-a3ee-075806f1e5c4",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\AzureWebapp - User Registration.js",
+      "file": "cypress\\integration\\examples\\AzureWebapp - User Registration.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5e73de79-200f-4af3-87d3-f00af56538bf",
+          "title": "My First Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My FirstTest case",
+              "fullTitle": "My First Test Suite My FirstTest case",
+              "timedOut": null,
+              "duration": 12478,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://webapp-attack.azurewebsites.net/\");\ncy.contains(\"Sign In\").click();\ncy.contains(\"Register here\").click();\ncy.get('input[name=\"email\"]').type(\"Shubham01@gmail.com\");\ncy.get(\"#password\").type(\"Shubham@123\");\ncy.get(\"#cpassword\").type(\"Shubham@123\");\ncy.get('input[name=\"firstName\"]').type(\"Shubham\");\ncy.get('input[name=\"lastName\"]').type(\"Motwani\");\ncy.get('input[name=\"address1\"]').type(\"Hinjewadi\");\ncy.get('input[name=\"address2\"]').type(\"Phase 1\");\ncy.get('input[name=\"zipcode\"]').type(\"440025\");\ncy.get('input[name=\"city\"]').type(\"Pune\");\ncy.get('input[name=\"state\"]').type(\"Maharashtra\");\ncy.get('input[name=\"country\"]').type(\"India\");\ncy.get('input[name=\"phone\"]').type(\"987654321\");\ncy.get('input[value=\"Register\"]').click();\ncy.get(\"body p\").should(\"have.text\", \" Registered Successfully \");\ncy.get(\"#loginEmail\").type(\"Shubham01@gmail.com\");\ncy.get(\"#loginPassword\").type(\"Shubham@123\");\ncy.get(\".submitField > input\").click();\n//cy.get(\".dropbtn\").should(\"contain.text\", \"Shubham\");\n//cy.get(\".dropbtn\").should(\"contain.text\", \"Hello\");",
+              "err": {},
+              "uuid": "b45e0daa-f317-44d3-83df-7f86e321d074",
+              "parentUUID": "5e73de79-200f-4af3-87d3-f00af56538bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b45e0daa-f317-44d3-83df-7f86e321d074"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12478,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
