@@ -1,5 +1,3 @@
-///<reference types="Cypress" />;
-
 describe("My First Test Suite", function () {
   before(() => {
     cy.fixture("example").then(function (data) {
@@ -31,7 +29,7 @@ describe("My First Test Suite", function () {
     //cy.get(".dropbtn").should("contain.text", "Shubham");
     //cy.get(".dropbtn").should("contain.text", "Hello");
       });
-  });
+ 
 it("My second case", function () {
     cy.visit(Cypress.env("QA"));
     cy.writeFile("cypress/Logfile.log", "Hello World");
