@@ -6,7 +6,7 @@ describe("My First Test Suite", function () {
       this.data = data;
     });
   });
-  it("My FirstTest case", function () {
+  it("My FirstTest case", function () 
     cy.visit(Cypress.env("QA"));
     cy.writeFile("cypress/Logfile.log", "Hello World");
     cy.contains("Sign In").click();
