@@ -30,9 +30,7 @@ describe("My First Test Suite", function () {
     cy.get(".submitField > input").click();
     //cy.get(".dropbtn").should("contain.text", "Shubham");
     //cy.get(".dropbtn").should("contain.text", "Hello");
-  });
-});
-it("My FirstTest case", function () 
+
     cy.visit(Cypress.env("QA"));
     cy.writeFile("cypress/Logfile.log", "Hello World");
     cy.contains("Sign In").click();
