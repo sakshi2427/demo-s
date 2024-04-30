@@ -80,6 +80,6 @@ def addtwo11(a, b):
     return c
 
 # Test function
-print(addtwo(1, 2))
+print(addtwo11(1, 2))
 print(addtwo(1.5, 2.5))
 print(addtwo('1', '2'))
