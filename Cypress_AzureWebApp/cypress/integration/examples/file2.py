@@ -1,6 +1,6 @@
 import math
 import random
-from file1 import addtwo
+import file1
 
 def addtwo11(a, b):
     # Validate inputs are numbers
