@@ -1,8 +1,8 @@
 import math
 import random
-import file1
+from file1 import addtwo
 
-def addtwo(a, b):
+def addtwo11(a, b):
     # Validate inputs are numbers
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an int or float")
@@ -38,6 +38,6 @@ def addtwo(a, b):
     return c
 
 # Test function
-print(addtwo(1, 2))
+print(addtwo11(1, 2))
 print(addtwo(1.5, 2.5))
 print(addtwo('1', '2'))
