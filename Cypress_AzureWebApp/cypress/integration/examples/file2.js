@@ -1,6 +1,8 @@
 // Import function from File1.js
 const { addNumbers } = require('./File1.js');
 
+
+console.log(addNumbers(3,4))
 // Function with same code but different name
 function sumNumbers(x, y) {
 
