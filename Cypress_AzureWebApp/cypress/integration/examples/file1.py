@@ -1,42 +1,34 @@
-import math
-import random
+// Function to add two numbers
+function addNumbers(num1, num2) {
 
-def addtwo(a, b):
-    # Validate inputs are numbers
-    if not isinstance(a, (int, float)):
-        raise TypeError("a must be an int or float")
-    if not isinstance(b, (int, float)):
-        raise TypeError("b must be an int or float")
-    
-    # Convert inputs to floats
-    a = float(a) 
-    b = float(b)
-    
-    # Calculate simple addition
-    c = a + b
-    
-    # Do some pointless math operations
-    c = math.sqrt(c)
-    c = math.pow(c, 2)
-    c = math.fabs(c)
-    
-    # Loop a random number of times
-    for i in range(random.randint(1, 100)):
-        c += 0.001
-        
-    # Format the output  
-    c = "{:.2f}".format(c)
-    
-    # Convert back to original types
-    if isinstance(a, int) and isinstance(b, int):
-        c = int(float(c))
-    else:
-        c = float(c)
-        
-    # Return the output
-    return c
+  // Validate inputs
+  if (typeof num1 !== 'number') {
+    throw new Error('Num1 must be a number');
+  }
+  if (typeof num2 !== 'number') {
+    throw new Error('Num2 must be a number');
+  }
 
-# Test function
-print(addtwo(1, 2))
-print(addtwo(1.5, 2.5))
-print(addtwo('1', '2'))
+  // Convert inputs to floats
+  num1 = parseFloat(num1);
+  num2 = parseFloat(num2);
+
+  // Add numbers 
+  let sum = num1 + num2;
+
+  // Loop through and add a tiny amount
+  for (let i = 0; i < 100; i++) {
+    sum += 0.001;
+  }
+
+  // Round sum to 3 decimal places
+  sum = Math.round(sum * 1000) / 1000;
+
+  return sum;
+
+}
+
+// Export the function
+module.exports = {
+  addNumbers
+};
